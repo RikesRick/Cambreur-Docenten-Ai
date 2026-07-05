@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <title>Amber Bakker</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f5f5f5;
+            margin: 0;
+            padding: 30px;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .albums {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 40px;
+            justify-items: center;
+        }
+
+        .album {
+            text-align: center;
+        }
+
+        .album img {
+            width: 150px;
+            height: auto;
+            object-fit: cover;
+            display: auto;
+            margin: 0 auto;
+        }
+
+        .album a {
+            display: block;
+            margin-top: 12px;
+            font-size: 20px;
+            font-weight: bold;
+            color: black;
+            text-decoration: none;
+        }
+
+        .album a:hover {
+            text-decoration: underline;
+            color: #0066cc;
+        }
+
+        /* 📱 Responsive (optioneel maar handig) */
+        @media (max-width: 1000px) {
+            .albums {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+
+        @media (max-width: 650px) {
+            .albums {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 450px) {
+            .albums {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<h1>Cambreur College Docenten</h1>
+
+<div class="albums">
+<!-------------------------------------------------------------------->
+    <div class="album">
+        <img src="H/Amber Bakker.jpg" alt="Amber Bakker">
+        <a href="AmberBakker.html">Amber Bakker</a>
+    </div>
+<!-------------------------------------------------------------------->
